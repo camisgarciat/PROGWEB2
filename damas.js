@@ -45,7 +45,7 @@ function criaPeca(cor) {
     const imagem = document.createElement('img')
     imagem.classList.add('peca') 
     imagem.id = `p${pecaId++}`
-    imagem.setAttribute('src', `img/${cor}.png`)
+    imagem.setAttribute('src', `${cor}.png`)
     imagem.setAttribute('width', `${tamanhoCelula-4}px`)
     imagem.setAttribute('height', `${tamanhoCelula-4}px`)
     imagem.addEventListener('drag', drag)
