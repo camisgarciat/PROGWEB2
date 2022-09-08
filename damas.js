@@ -53,7 +53,7 @@ function criaPeca(cor) {
 }
 
 function permDrop(evento){
-    evento.preventDefault() // Não vai fazer o normal
+    evento.preventDefault()
     const imagem = document.querySelector(`#${imgid}`)
     const col_ori = imagem.parentElement.dataset.col 
     const lin_ori = imagem.parentElement.dataset.lin
