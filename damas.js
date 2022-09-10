@@ -26,7 +26,7 @@ function criaTabuleiro() {
                 celula.style.backgroundColor = 'black'
                 if (i * 8 + j <= 24) {
                     const peca = criaPeca('black')
-                    peca.setAttribute('draggable','true')
+                    peca.setAttribute('draggable','false')
                     celula.append(peca)
                     celula.removeEventListener('dragover', permDrop)
                 } else if (i * 8 + j >= 40) {
