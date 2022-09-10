@@ -74,11 +74,10 @@ function drag(evento) {
 
 function trocaJog() {
     const pecas = document.querySelectorAll('.peca')
-    pecas.forEach(peca => {
-        peca.addEventListener ("dragstart , comecarArrastar);
+    pecas.forEach(peca => {peca.draggable = !peca.draggable
+        
     })
-function comecarArrastar(){
-console.log("arrastando");
+
 }
 function drop(evento) {
     const imagem = document.querySelector(`#${imgid}`)
